@@ -1,0 +1,9 @@
+{
+  "name": "coredb-models",
+  "version": "0.0.1",
+  "description": "Sequelize Models for interacting with Alles' core database",
+  "main": "index.js",
+  "repository": "https://github.com/alleshq/coredb-models",
+  "author": "Archie Baer <archie@abaer.dev>",
+  "license": "MIT"
+}
