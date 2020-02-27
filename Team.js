@@ -28,6 +28,11 @@ module.exports = db => {
             type: DataTypes.ENUM("free", "basic", "premium", "ultimate"),
             defaultValue: "free",
             allowNull: false
+        },
+        stardust: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0,
+            allowNull: false
         }
     }, {
         updatedAt: false
