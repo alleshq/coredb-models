@@ -10,6 +10,8 @@ module.exports = db => {
 			type: DataTypes.STRING,
 			allowNull: false
 		}
+	}, {
+		paranoid: true
 	});
 
 	//User Association

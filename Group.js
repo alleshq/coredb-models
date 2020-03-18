@@ -24,7 +24,8 @@ module.exports = db => {
 			}
 		},
 		{
-			updatedAt: false
+			updatedAt: false,
+			paranoid: true
 		}
 	);
 
