@@ -6,7 +6,8 @@ module.exports = db => {
 		{
 			id: {
 				primaryKey: true,
-				type: DataTypes.UUID
+				type: DataTypes.UUID,
+				allowNull: false
 			},
 			username: {
 				type: DataTypes.STRING,
