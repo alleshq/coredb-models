@@ -8,7 +8,11 @@ module.exports = db => {
 				primaryKey: true,
 				type: DataTypes.UUID,
 				allowNull: false
-            },
+			},
+			secret: {
+				type: DataTypes.STRING,
+				allowNull: false
+			},
             name: {
                 type: DataTypes.STRING,
                 allowNull: false
