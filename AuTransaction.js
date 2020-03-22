@@ -8,41 +8,41 @@ module.exports = db => {
 				primaryKey: true,
 				type: DataTypes.UUID,
 				allowNull: false
-            },
-            amount: {
-                type: DataTypes.INTEGER,
-                allowNull: false
-            },
-            fee: {
-                type: DataTypes.INTEGER,
-                allowNull: false
-            },
-            refunded: {
-                type: DataTypes.BOOLEAN,
-                allowNull: false,
-                defaultValue: false
-            }
+			},
+			amount: {
+				type: DataTypes.INTEGER,
+				allowNull: false
+			},
+			fee: {
+				type: DataTypes.INTEGER,
+				allowNull: false
+			},
+			refunded: {
+				type: DataTypes.BOOLEAN,
+				allowNull: false,
+				defaultValue: false
+			}
 		},
 		{
 			updatedAt: false
 		}
 	);
 
-    //From association
+	//From association
 	db.AuAccount.hasMany(db.AuTransaction, {
-        as: "outTransactions",
-        foreignKey: "fromId"
-    });
+		as: "outTransactions",
+		foreignKey: "fromId"
+	});
 	db.AuTransaction.belongsTo(db.AuAccount, {
-        as: "from"
-    });
+		as: "from"
+	});
 
-    //To association
+	//To association
 	db.AuAccount.hasMany(db.AuTransaction, {
-        as: "inTransactions",
-        foreignKey: "toId"
-    });
+		as: "inTransactions",
+		foreignKey: "toId"
+	});
 	db.AuTransaction.belongsTo(db.AuAccount, {
-        as: "to"
-    });
+		as: "to"
+	});
 };

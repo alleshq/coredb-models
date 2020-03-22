@@ -13,15 +13,15 @@ module.exports = db => {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
-            name: {
-                type: DataTypes.STRING,
-                allowNull: false
-            },
-            balance: {
-                type: DataTypes.BIGINT,
-                allowNull: false,
-                defaultValue: 0
-            }
+			name: {
+				type: DataTypes.STRING,
+				allowNull: false
+			},
+			balance: {
+				type: DataTypes.BIGINT,
+				allowNull: false,
+				defaultValue: 0
+			}
 		},
 		{
 			updatedAt: false,
