@@ -10,6 +10,7 @@ module.exports = db => {
 	require("./Application")(db);
 	require("./AuthCode")(db);
 	require("./AuthToken")(db);
+	require("./AuAccount")(db);
 
 	return db;
 };
