@@ -17,6 +17,12 @@ module.exports = db => {
 				type: DataTypes.INTEGER,
 				allowNull: false
 			},
+			meta: {
+				type: DataTypes.STRING
+			},
+			redirect: {
+				type: DataTypes.STRING
+			},
 			refunded: {
 				type: DataTypes.BOOLEAN,
 				allowNull: false,
