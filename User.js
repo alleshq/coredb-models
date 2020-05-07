@@ -30,6 +30,9 @@ module.exports = db => {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
+			avatar: {
+				type: DataTypes.STRING
+			},
 			reputation: {
 				type: DataTypes.INTEGER,
 				defaultValue: 0,
