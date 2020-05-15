@@ -1,5 +1,5 @@
 module.exports = db => {
-	//Define Models
+	// Define Models
 	require("./User")(db);
 	require("./Session")(db);
 	require("./FollowerRelation")(db);

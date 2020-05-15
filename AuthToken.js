@@ -39,11 +39,11 @@ module.exports = db => {
 		}
 	);
 
-	//User Association
+	// User Association
 	db.User.hasMany(db.AuthToken);
 	db.AuthToken.belongsTo(db.User);
 
-	//Application Association
+	// Application Association
 	db.Application.hasMany(db.AuthToken);
 	db.AuthToken.belongsTo(db.Application);
 };

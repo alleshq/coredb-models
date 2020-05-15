@@ -29,7 +29,7 @@ module.exports = db => {
 		}
 	);
 
-	//Booster Association
+	// Booster Association
 	db.Group.hasMany(db.User, {
 		foreignKey: "boostedGroupId",
 		as: "boosters"

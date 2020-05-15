@@ -18,7 +18,7 @@ module.exports = db => {
 		}
 	);
 
-	//Group/User Association
+	// Group/User Association
 	db.User.belongsToMany(db.Group, {
 		as: "groups",
 		through: db.GroupMember,

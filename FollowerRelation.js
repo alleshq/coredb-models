@@ -7,7 +7,7 @@ module.exports = db => {
 		}
 	);
 
-	//Follower Association
+	// Follower Association
 	db.User.belongsToMany(db.User, {
 		as: "followers",
 		through: db.FollowerRelation,

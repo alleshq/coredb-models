@@ -19,7 +19,7 @@ module.exports = db => {
 		}
 	);
 
-	//User Association
+	// User Association
 	db.User.hasMany(db.Session);
 	db.Session.belongsTo(db.User);
 };

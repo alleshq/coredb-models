@@ -64,7 +64,7 @@ module.exports = db => {
 		}
 	);
 
-	//Primary/Secondary Association
+	// Primary/Secondary Association
 	db.User.hasMany(db.User, {
 		foreignKey: "primaryId",
 		as: "secondaries"

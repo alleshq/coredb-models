@@ -44,7 +44,7 @@ module.exports = db => {
 		}
 	);
 
-	//Team Association
+	// Team Association
 	db.Team.hasMany(db.Application);
 	db.Application.belongsTo(db.Team);
 };

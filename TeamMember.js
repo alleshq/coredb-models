@@ -26,7 +26,7 @@ module.exports = db => {
 		}
 	);
 
-	//Team/User Association
+	// Team/User Association
 	db.User.belongsToMany(db.Team, {
 		as: "teams",
 		through: db.TeamMember,
