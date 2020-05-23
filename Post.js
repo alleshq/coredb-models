@@ -49,7 +49,7 @@ module.exports = db => {
 		}
 	);
 
-	// User Association
+	// Author Association
 	db.User.hasMany(db.Post);
 	db.Post.belongsTo(db.User);
 
