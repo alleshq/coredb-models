@@ -12,6 +12,9 @@ module.exports = db => {
 	require("./AuthToken")(db);
 	require("./Post")(db);
 	require("./PostInteraction")(db);
+	require("./Tag")(db);
+	require("./PostTag")(db);
+	require("./UserTag")(db);
 
 	return db;
 };
