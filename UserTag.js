@@ -15,7 +15,7 @@ module.exports = db => {
 		otherKey: "postId"
 	});
 	db.Post.belongsToMany(db.User, {
-		as: "taggedUsers",
+		as: "mentions",
 		through: db.UserTag,
 		foreignKey: "postId",
 		otherKey: "userId"
