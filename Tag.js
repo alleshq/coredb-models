@@ -2,7 +2,7 @@ const {DataTypes} = require("sequelize");
 
 module.exports = db => {
 	db.Tag = db.define(
-		"tag",
+		"hashtag",
 		{
 			id: {
 				primaryKey: true,
