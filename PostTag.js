@@ -1,5 +1,5 @@
 module.exports = db => {
-	db.postTag = db.define(
+	db.PostTag = db.define(
 		"postTag",
 		{},
 		{
