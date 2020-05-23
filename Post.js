@@ -19,28 +19,6 @@ module.exports = db => {
 			score: {
 				type: DataTypes.INTEGER,
 				allowNull: false
-			},
-			tags: {
-				type: DataTypes.TEXT,
-				defaultValue: "[]",
-				allowNull: false,
-				get() {
-					return JSON.parse(this.getDataValue("tags"));
-				},
-				set(value) {
-					this.setDataValue("tags", JSON.stringify(value));
-				}
-			},
-			taggedUsers: {
-				type: DataTypes.TEXT,
-				defaultValue: "[]",
-				allowNull: false,
-				get() {
-					return JSON.parse(this.getDataValue("taggedUsers"));
-				},
-				set(value) {
-					this.setDataValue("taggedUsers", JSON.stringify(value));
-				}
 			}
 		},
 		{
