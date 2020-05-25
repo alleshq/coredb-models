@@ -1,6 +1,6 @@
 {
-	"name": "coredb-models",
-	"version": "0.0.9",
+	"name": "@alleshq/coredb-models",
+	"version": "0.1.0",
 	"description": "Sequelize Models for interacting with Alles' core database",
 	"main": "index.js",
 	"repository": "https://github.com/alleshq/coredb-models",
