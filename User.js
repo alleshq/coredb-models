@@ -17,11 +17,6 @@ module.exports = db => {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
-			usesLegacyPassword: {
-				type: DataTypes.BOOLEAN,
-				defaultValue: false,
-				allowNull: false
-			},
 			name: {
 				type: DataTypes.STRING,
 				allowNull: false
