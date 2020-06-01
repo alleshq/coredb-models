@@ -1,8 +1,8 @@
 const {DataTypes} = require("sequelize");
 
 module.exports = db => {
-	db.Team = db.define(
-		"team",
+	db.DevOrg = db.define(
+		"devOrg",
 		{
 			id: {
 				primaryKey: true,
@@ -13,23 +13,9 @@ module.exports = db => {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
-			slug: {
-				type: DataTypes.STRING,
-				allowNull: false
-			},
 			verified: {
 				type: DataTypes.BOOLEAN,
 				defaultValue: false,
-				allowNull: false
-			},
-			developer: {
-				type: DataTypes.BOOLEAN,
-				defaultValue: false,
-				allowNull: false
-			},
-			plan: {
-				type: DataTypes.ENUM("free", "basic", "premium", "ultimate"),
-				defaultValue: "free",
 				allowNull: false
 			},
 			stardust: {

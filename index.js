@@ -3,8 +3,8 @@ module.exports = db => {
 	require("./User")(db);
 	require("./Session")(db);
 	require("./FollowerRelation")(db);
-	require("./Team")(db);
-	require("./TeamMember")(db);
+	require("./DevOrg")(db);
+	require("./DevOrgMember")(db);
 	require("./Application")(db);
 	require("./AuthCode")(db);
 	require("./AuthToken")(db);
