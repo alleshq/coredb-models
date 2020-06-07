@@ -20,7 +20,7 @@ module.exports = db => {
 	);
 
 	// Org/User Association
-	db.User.belongsToMany(db.Team, {
+	db.User.belongsToMany(db.DevOrg, {
 		as: "devOrgs",
 		through: db.DevOrgMember,
 		foreignKey: "userId",
