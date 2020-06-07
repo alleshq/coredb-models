@@ -13,14 +13,8 @@ module.exports = db => {
 				type: DataTypes.STRING,
 				allowNull: false
 			},
-			verified: {
-				type: DataTypes.BOOLEAN,
-				defaultValue: false,
-				allowNull: false
-			},
-			stardust: {
-				type: DataTypes.INTEGER,
-				defaultValue: 0,
+			color: {
+				type: DataTypes.STRING,
 				allowNull: false
 			}
 		},

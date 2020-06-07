@@ -4,9 +4,14 @@ module.exports = db => {
 	db.DevOrgMember = db.define(
 		"devOrgMember",
 		{
-			role: {
-				type: DataTypes.ENUM("admin", "write", "read"),
+			privilege: {
+				type: DataTypes.INTEGER(2),
 				allowNull: false
+			},
+			accepted: {
+				type: DataTypes.BOOLEAN,
+				allowNull: false,
+				defaultValue: false
 			}
 		},
 		{
