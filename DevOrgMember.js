@@ -4,9 +4,10 @@ module.exports = db => {
 	db.DevOrgMember = db.define(
 		"devOrgMember",
 		{
-			privilege: {
-				type: DataTypes.INTEGER(2),
-				allowNull: false
+			admin: {
+				type: DataTypes.BOOLEAN,
+				allowNull: false,
+				defaultValue: false
 			},
 			accepted: {
 				type: DataTypes.BOOLEAN,
