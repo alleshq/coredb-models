@@ -50,6 +50,9 @@ module.exports = db => {
 				type: DataTypes.BOOLEAN,
 				defaultValue: false,
 				allowNull: false
+			},
+			stripeCustomerId: {
+				type: DataTypes.STRING
 			}
 		},
 		{
