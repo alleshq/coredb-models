@@ -53,6 +53,9 @@ module.exports = db => {
 			},
 			stripeCustomerId: {
 				type: DataTypes.STRING
+			},
+			color: {
+				type: DataTypes.STRING
 			}
 		},
 		{
