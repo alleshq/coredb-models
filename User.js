@@ -56,6 +56,9 @@ module.exports = db => {
 			},
 			color: {
 				type: DataTypes.STRING
+			},
+			newNotifications: {
+				type: DataTypes.DATE
 			}
 		},
 		{
